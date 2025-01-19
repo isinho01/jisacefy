@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="./imagens/brat.ico">
+    <script src="./scripts/script.js"></script>
+    <script defer src="./scripts/app.js"></script>
+    <title>Jisacefy</title>
+</head>
+
+<body>
+    <!-- inicio do cabeçalho da pagina -->
+    <header class="header">
+        <nav class="nav">
+            <button class="hamburger"></button>
+            <ul class="nav-list">
+                <li><a href="#recomendado">Recomendados</a></li>
+                <li><a href="#playlist">Playlists em Destaque</a></li>
+                <li><a href="#searchHistoryContainer">Histórico de Pesquisa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- termino do cabeçalho da pagina -->
+
+    <!-- barra de pesquisa -->
+    <div class="search-box">
+        <input class="search-txt" type="text" id="searchInput" placeholder="Procure sua Música! ">
+        <button class="search-btn" onclick="registerSearch()">
+            <h2>brat</h2>
+        </button>
+    </div>
+
+
+
+    <div>
+        <img src="./imagens/rascunhos hallowgest - JP  (2).png" alt="">
+    </div>
+
+    <!-- caixinha que guarda as playlists -->
+    <div class="container_recomendados" id="recomendado">
+        <h2>Recomendados</h2>
+        <div class="albuns_reproduzidos">
+            <!-- Seus iframes do Spotify -->
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/album/2lIZef4lzdvZkiiCzvPKj7?utm_source=generator" width="40%"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/album/6z6VObudfoxrvGNC5MtiTY?utm_source=generator" width="40%"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/album/7dK54iZuOxXFarGhXwEXfF?utm_source=generator" width="40%"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/album/2fYhqwDWXjbpjaIJPEfKFw?utm_source=generator" width="40%"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </div>
+    </div>
+
+
+
+    <main>
+        <div class="playlists" id="playlist">
+            <h2>Playlists em destaque</h2>
+            <!-- Suas playlists -->
+
+            <iframe style="border-radius:12px" 
+                src="https://open.spotify.com/embed/album/5HE9DhP8b3m3LmShTreEvq?utm_source=generator" 
+                width="40%" height="352" frameBorder="0" 
+                allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
+
+            <iframe style="border-radius:12px" 
+                src="https://open.spotify.com/embed/album/4uU2HBHwoCdQQQZUmZB0G9?utm_source=generator" 
+                width="40%" height="352" 
+                frameBorder="0" allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
+
+            <iframe style="border-radius:12px" 
+                src="https://open.spotify.com/embed/album/1HRONdLhKvok05NgMKtKpj?utm_source=generator" 
+                width="40%" height="352" frameBorder="0" 
+                allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
+            
+            <iframe style="border-radius:12px" 
+                src="https://open.spotify.com/embed/album/2SXORkzxQrYi0ueO5v6wCC?utm_source=generator" 
+                width="40%" height="352" 
+                frameBorder="0" allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
+
+        </div>
+    </main>
+
+
+    <!-- historico de pesquisas realizadas na barra -->
+    <div id="searchHistoryContainer">
+        <h3>Histórico de Buscas</h3>
+        <ul id="searchHistory"></ul>
+    </div>
+</body>
+
+</html>
