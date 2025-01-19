@@ -1,81 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./scripts/script.js"></script>
+    <script defer src="./scripts/app.js"></script>
     <title>Jisacefy</title>
-    
 </head>
+
 <body>
-    <header>
-        
-        <!-- nav do site - apresentacao inicial -->
-        <nav>
-            <ul>
-                <li> brat </li>
-                <li> charli </li>
-                <li> xcx </li>
+    <!-- inicio do cabeçalho da pagina -->
+    <header class="header">
+        <nav class="nav">
+            <button class="hamburger"></button>
+            <ul class="nav-list">
+                <li><a href="#">Charli</a></li>
+                <li><a href="#">xcx</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
+    <!-- termino do cabeçalho da pagina -->
+
+    <!-- barra de pesquisa -->
+    <div class="search-box">
+        <input class="search-txt" type="text" id="searchInput" placeholder="Procure sua Música! ">
+        <button class="search-btn" onclick="registerSearch()">
+            <h2>brat</h2>
+        </button>
+    </div>
+
 
 
     <div>
         <img src="./imagens/rascunhos hallowgest - JP  (2).png" alt="">
     </div>
-    
-    <div class="albuns_reproduzidos">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2lIZef4lzdvZkiiCzvPKj7?utm_source=generator" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6z6VObudfoxrvGNC5MtiTY?utm_source=generator" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <!-- caixinha que guarda as playlists -->
+    <div class="container_recomendados">
+        <h2>Recomendados</h2>
+        <div class="albuns_reproduzidos">
+            <!-- Seus iframes do Spotify -->
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/album/2lIZef4lzdvZkiiCzvPKj7?utm_source=generator" width="40%"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
 
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7dK54iZuOxXFarGhXwEXfF?utm_source=generator" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/album/6z6VObudfoxrvGNC5MtiTY?utm_source=generator" width="40%"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
 
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2fYhqwDWXjbpjaIJPEfKFw?utm_source=generator" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/album/7dK54iZuOxXFarGhXwEXfF?utm_source=generator" width="40%"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/album/2fYhqwDWXjbpjaIJPEfKFw?utm_source=generator" width="40%"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </div>
     </div>
 
- 
+
+
     <main>
-        <section class="hero">
-            <h1>Ouça suas músicas favoritas</h1>
-            <p>Milhões de músicas. Sem anúncios.</p>
-            <button>Comece agora</button>
-        </section>
         <section class="playlists">
             <h2>Playlists em destaque</h2>
-            <div class="playlist">
-                <img src="playlist1.jpg" alt="Playlist 1">
-                <h3>Nome da Playlist 1</h3>
-            </div>
-            <div class="playlist">
-                <img src="playlist2.jpg" alt="Playlist 2">
-                <h3>Nome da Playlist 2</h3>
-            </div>
-            <div class="playlist">
-                <img src="playlist3.jpg" alt="Playlist 3">
-                <h3>Nome da Playlist 3</h3>
-            </div>
+            <!-- Suas playlists -->
         </section>
     </main>
-    <!-- <div class="albuns">
-        <div>
-            <h5>brat</h5>
-            <img src="./imagens/brat.png" alt="">
-        </div>
-
-        <div>
-            <h5>lemonade</h5>
-            <img src="./imagens/Capa_de_Lemonade.png" alt="">
-        </div>
 
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div> -->
+    <!-- historico de pesquisas realizadas na barra -->
+    <div id="searchHistoryContainer">
+        <h3>Histórico de Buscas</h3>
+        <ul id="searchHistory"></ul>
+    </div>
 </body>
+
 </html>
