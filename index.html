@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="./imagens/brat.ico">
     <script src="./scripts/script.js"></script>
     <script defer src="./scripts/app.js"></script>
     <title>Jisacefy</title>
@@ -16,9 +17,9 @@
         <nav class="nav">
             <button class="hamburger"></button>
             <ul class="nav-list">
-                <li><a href="#">Charli</a></li>
-                <li><a href="#">xcx</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#recomendado">Recomendados</a></li>
+                <li><a href="#playlist">Playlists em Destaque</a></li>
+                <li><a href="#searchHistoryContainer">Histórico de Pesquisa</a></li>
             </ul>
         </nav>
     </header>
@@ -39,7 +40,7 @@
     </div>
 
     <!-- caixinha que guarda as playlists -->
-    <div class="container_recomendados">
+    <div class="container_recomendados" id="recomendado">
         <h2>Recomendados</h2>
         <div class="albuns_reproduzidos">
             <!-- Seus iframes do Spotify -->
@@ -72,18 +73,53 @@
 
 
     <main>
-        <section class="playlists">
+        <div class="playlists" id="playlist">
             <h2>Playlists em destaque</h2>
             <!-- Suas playlists -->
-        </section>
+            <div class="albuns_reproduzidos">
+                <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/album/5HE9DhP8b3m3LmShTreEvq?utm_source=generator" 
+                    width="40%" height="352" frameBorder="0" 
+                    allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+
+                <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/album/4uU2HBHwoCdQQQZUmZB0G9?utm_source=generator" 
+                    width="40%" height="352" 
+                    frameBorder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+
+                <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/album/1HRONdLhKvok05NgMKtKpj?utm_source=generator" 
+                    width="40%" height="352" frameBorder="0" 
+                    allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+                
+                <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/album/2SXORkzxQrYi0ueO5v6wCC?utm_source=generator" 
+                    width="40%" height="352" 
+                    frameBorder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+        </div>
+        </div>
     </main>
+    
+</body>
 
-
+<footer>
     <!-- historico de pesquisas realizadas na barra -->
     <div id="searchHistoryContainer">
         <h3>Histórico de Buscas</h3>
         <ul id="searchHistory"></ul>
     </div>
-</body>
+
+    <div class="about-us">
+        <p>SOBRE NÓS
+            <br> blablablalbaablalablala
+        </p>
+    </div>
+</footer>
 
 </html>

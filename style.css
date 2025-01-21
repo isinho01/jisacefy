@@ -137,7 +137,7 @@ a {
 /* termino da estilização do hamburger */
 
 
-.albuns_reproduzidos {
+.albuns_reproduzidos, .playlists {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -150,10 +150,26 @@ a {
     /* Permite que os itens se movam para a próxima linha */
 }
 
+.about-us{
+    display: flex;
+    position: absolute;/* Permite posicionar em relação ao container */
+    top: auto; /* Distância do topo */
+    right: 150px; /* Distância da direita */
+    background-color: #010d1885;
+    padding: 100px;
+}
+
 @media (max-width: 768px) {
 
     /* Ajuste o valor conforme necessário */
-    .albuns_reproduzidos {
+    .albuns_reproduzidos{
+        flex-direction: column;
+        /* Muda a direção para coluna em telas menores */
+        align-items: center;
+        /* Centraliza os iframes */
+    }
+
+    .playlists {
         flex-direction: column;
         /* Muda a direção para coluna em telas menores */
         align-items: center;
@@ -168,7 +184,17 @@ a {
     }
 }
 
-.container_recomendados h2 {
+@media (max-width: 608px) {
+    .about-us{
+        position: static;
+        align-items: center;
+        right: 30px; /* Distância da direita */
+        background-color: #111d29b0;
+        padding: 10px;
+    }
+}
+
+.container_recomendados h2, .playlists h2 {
     text-align: center;
     justify-content: center;
     font-family: "Poppins", serif;
@@ -233,3 +259,4 @@ a {
     font-style: normal;
     font-weight: 300;
 }
+
