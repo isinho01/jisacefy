@@ -153,10 +153,11 @@ a {
 .about-us{
     display: flex;
     position: absolute;/* Permite posicionar em relação ao container */
-    top: auto; /* Distância do topo */
-    right: 150px; /* Distância da direita */
+    /* top: auto; Distância do topo */
+    /* right: 150px; Distância da direita */
     background-color: #010d1885;
     padding: 100px;
+    border-radius: 40px;
 }
 
 @media (max-width: 768px) {
@@ -188,7 +189,7 @@ a {
     .about-us{
         position: static;
         align-items: center;
-        right: 30px; /* Distância da direita */
+        right: 30px;  
         background-color: #111d29b0;
         padding: 10px;
     }
